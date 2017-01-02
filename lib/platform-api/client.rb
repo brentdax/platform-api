@@ -2478,8 +2478,8 @@ module PlatformAPI
     # Create URLs for uploading and downloading source. Deprecated in favor of `POST /sources`
     #
     # @param app_id_or_app_name: unique identifier of app or unique name of app
-    def create_(deprecated)(app_id_or_app_name)
-      @client.source.create_(deprecated)(app_id_or_app_name)
+    def create_deprecated(app_id_or_app_name)
+      @client.source.create_deprecated(app_id_or_app_name)
     end
   end
 
@@ -14326,7 +14326,7 @@ module PlatformAPI
           "targetSchema": {
             "$ref": "#/definitions/source"
           },
-          "title": "Create (Deprecated)"
+          "title": "Create Deprecated"
         }
       ],
       "properties": {
